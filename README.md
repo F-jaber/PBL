@@ -17,7 +17,7 @@ In order to use this code there are some prerequisites that need to be fulfilled
 Please install the following:
 - [APReL](https://github.com/Stanford-ILIAD/APReL)
 - [PyBullet](https://github.com/bulletphysics/bullet3)
-- [FFmpeg](https://github.com/bulletphysics/bullet3)
+- [FFmpeg](https://github.com/F-jaber/PBL)
 - [numpy](https://numpy.org/install/)
 - [qiBullet](https://github.com/softbankrobotics-research/qibullet)
 - [Gym v0.21.0](https://github.com/openai/gym/releases/tag/v0.21.0)
