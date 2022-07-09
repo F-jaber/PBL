@@ -25,8 +25,10 @@ Just clone this repository onto your pc.
 git clone https://github.com/F-jaber/PBL.git
 ```
 After cloning, please make sure to register both tasks' environments as Gym environments on your pc. Follow this [tutorial](https://towardsdatascience.com/beginners-guide-to-custom-environments-in-openai-s-gym-989371673952) for more information on registering Gym environments.
+
+Moreover, replace the original generate_trajectories.py file in the utils folder in the APReL library by the generate_trajectories.py file cloned from this repository.
 ## Running the project
-To run 
+To query for a user's preference for the obstacle avoidance task, simply run the run_Obs.py file. If you would like to query the preference for the throwing task simply run the run_Throw.py file. You can set the number of queries to ask the user in the run files. Users will always be shown two trajectories of the task at a time and can give their preference of which trajectory they prefer through keyboard input (0 if they  the first shown trajectory, 1 if they prefer the second shown trajectory). When the querying is done, APReL will output the weights of the trajectory features. You can then incorporate these weights in the reward function implemented in the task's environment file. Afterward, you can use your favorite RL training algorithm to train the robot using the incorporated weights which should have captured the user's preference. 
 
 ![Obstacle Avoidance Task](https://i.ibb.co/185rGbz/Picture1.gif)
 ![Throwing Task](https://i.ibb.co/KzbtTfX/Picture2.gif)
