@@ -21,7 +21,7 @@ def feature_func(traj):
     """
     states = np.array([pair[0] for pair in traj])
     actions = np.array([pair[1] for pair in traj[:-1]])
-    left_right = states[:, 1].max()
+    left_right = states[:, 1].mean()
     x1, y1, z1 = states[:, 0], states[:, 1], states[:, 2]
     x2, y2, z2 = states[:, 3], states[:, 4], states[:, 5]
     l2normbuck1 = np.sqrt(((x1 - x2) ** 2) + ((y1 - y2) ** 2) + ((z1 -  z2) ** 2))
